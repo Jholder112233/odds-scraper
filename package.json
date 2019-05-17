@@ -1,0 +1,29 @@
+{
+    "name": "betrayal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "odds": "babel-node --max-old-space-size=8192 ./scrapeOdds.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.4.3",
+        "@babel/node": "^7.2.2",
+        "@babel/plugin-external-helpers": "^7.0.0",
+        "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+        "@babel/plugin-transform-runtime": "^7.0.0",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/register": "^7.0.0",
+        "@babel/runtime": "^7.0.0",
+        "cheerio": "^1.0.0-rc.3",
+        "d3": "^5.9.2",
+        "json2csv": "^4.5.1",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4",
+        "scrape-twitter": "^0.11.1"
+    }
+}
