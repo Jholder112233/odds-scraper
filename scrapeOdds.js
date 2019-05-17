@@ -29,7 +29,10 @@ rp({
         return { name: $r.attr("data-bname"), odds: odds };
     }).get();
 
-    fs.writeFileSync(`./scraped/${new Date().getTime()}.json`, JSON.stringify(candidates))
+    const time = new Date().getTime();
+
+    fs.writeFileSync(`./scraped/${time}.json`, JSON.stringify(candidates))
+    fs.writeFileSync(`./latest.json`, JSON.stringify({timestamp: time}));
 
 }).catch(err => {
     console.log(err);
