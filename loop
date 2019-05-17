@@ -1,3 +1,3 @@
 npm run odds
-aws s3 cp "./latest.json" s3://gdn-cdn/2019/odds/ --acl public-read-write
-aws s3 sync "./scraped" s3://gdn-cdn/2019/odds/scraped --acl public-read-write
+aws s3 cp "./latest.json" s3://gdn-cdn/2019/odds/ --acl public-read-write --cache-control max-age=60
+aws s3 sync "./scraped" s3://gdn-cdn/2019/odds/scraped --acl public-read-write --cache-control max-age=60
